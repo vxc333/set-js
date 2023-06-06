@@ -5,7 +5,7 @@ module.exports = class Set {
 
   has(element) {
     return this.items.hasOwnProperty(element);
-  }  
+  }
 
   add(element) {
     if (!this.has(element)) {
@@ -111,14 +111,13 @@ mySet1.add(1);
 mySet1.add(3);
 mySet1.add(5);
 
-
 mySet2.add(2);
 mySet2.add(4);
 mySet2.add(5);
 mySet2.add(6);
 
-console.log(`Conjunto 1 : ${mySet1.values()}`)
-console.log(`Conjunto 2 : ${mySet2.values()}`)
+console.log(`Conjunto 1 : ${mySet1.values()}`);
+console.log(`Conjunto 2 : ${mySet2.values()}`);
 
 // União
 
@@ -128,7 +127,9 @@ console.log(`União dos Conjuntos : ${unionSet.values()}`);
 // Intersepção
 
 const intersectionSet = mySet1.intersection(mySet2);
-console.log(`Intersepção do Conjunto 1 do Conjunto 2 : ${intersectionSet.values()}`);
+console.log(
+  `Intersepção do Conjunto 1 do Conjunto 2 : ${intersectionSet.values()}`
+);
 
 // Diferença
 
